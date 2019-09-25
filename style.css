@@ -1,0 +1,154 @@
+body {
+  background-image: url("back.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main {
+  margin-top: 110px;
+  padding-left: 100px;
+  margin-bottom: 110px;
+}
+
+.fa {
+  font-size: 3em !important;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.fa-github {
+  margin-left: 8px !important;
+  color: #5c5c5c !important;
+  background-color: transparent;
+}
+
+.fa-github:hover {
+  color: #3f3f3f !important;
+}
+
+.fa-linkedin {
+  color: #5c5c5c !important;
+  background-color: transparent;
+}
+
+.fa-linkedin:hover {
+  color: #3f3f3f !important;
+}
+
+.fa-twitter {
+  margin-top: 4px;
+  color: #5c5c5c !important;
+  background-color: transparent !important;
+}
+
+.fa-twitter:hover {
+  color: #3f3f3f !important;
+}
+
+.fa-envelope {
+  color: #5c5c5c !important;
+  background-color: transparent !important;
+}
+
+.fa-envelope:hover {
+  color: #3f3f3f !important;
+}
+
+.tit {
+  font-size: 5em !important;
+}
+
+.sub {
+  font-size: 2.1em !important;
+}
+
+.subsub {
+  font-size: 2.3em !important;
+}
+.txt {
+  margin-left: 3px;
+}
+
+a {
+  color: #111 !important;
+}
+
+a:hover {
+  color: #0690ec !important;
+  text-decoration: none !important;
+}
+
+#about {
+  margin-top: 80px;
+  text-align: justify;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+a:hover .mvlf {
+  padding: 0;
+  margin-right: 0;
+  animation: 1s ease-out 0s infinite move;
+}
+
+.links {
+  font-weight: bold !important;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  body {
+    background-position: -400px center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-position: -300px center;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    background-position: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main {
+    margin-top: 10%;
+    padding-left: 0%;
+    margin-bottom: 10%;
+  }
+  .fa {
+    margin-right: 10%;
+  }
+  .col-sm-6 {
+    margin-bottom: 10px !important;
+  }
+  .row {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  body {
+    background-image: none;
+  }
+}
