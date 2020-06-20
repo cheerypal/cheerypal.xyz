@@ -1,0 +1,99 @@
+@font-face {
+  src: url("./fonts/OpenSans-ExtraBold.ttf");
+  font-family: "OpenSans-Black";
+}
+
+@font-face {
+  src: url("./fonts/OpenSans-Light.ttf");
+  font-family: "OpenSans-Light";
+}
+
+@font-face {
+  src: url("./fonts/harlowsolidplain.otf");
+  font-family: "Uplink-logo";
+}
+
+@font-face {
+  src: url("./fonts/Kanit-Black.ttf");
+  font-family: "VIROLL-logo";
+}
+
+body {
+  font-family: "OpenSans-Light";
+  font-size: 1.4em;
+  text-align: center;
+}
+
+h1 {
+  font-family: "OpenSans-Black";
+  font-size: 3.3em;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: "OpenSans-Black";
+  font-size: 2.3em;
+  padding: 10px;
+  margin: 10px;
+}
+
+p {
+  padding: 30px 0px;
+}
+
+.sub {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin-top: 15%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border-style: solid;
+  border-color: #c2c2c2;
+}
+
+#about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.img {
+  padding: 20px;
+  width: 10%;
+  border-radius: 50%;
+}
+
+.first {
+  padding-top: 20px;
+}
+
+#skills {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 0;
+}
