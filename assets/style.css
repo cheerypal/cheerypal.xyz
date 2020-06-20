@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  src: url("./fonts/OpenSans-SemiBold.ttf");
+  font-family: "links";
+}
+
+@font-face {
   src: url("./fonts/harlowsolidplain.otf");
   font-family: "Uplink-logo";
 }
@@ -22,6 +27,9 @@ body {
   font-family: "OpenSans-Light";
   font-size: 1.4em;
   text-align: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  padding: 0;
 }
 
 h1 {
@@ -38,8 +46,26 @@ h2 {
   margin: 10px;
 }
 
+.fa-arrow-down {
+  padding: 20px;
+}
+
+.fa-arrow-down:hover {
+  cursor: pointer;
+}
+
 p {
   padding: 30px 0px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "links";
+  color: black;
+  transition: 0.1s all ease-in-out;
+}
+a:hover {
+  font-size: 1.1em;
 }
 
 .sub {
@@ -69,7 +95,7 @@ hr {
 }
 
 #about {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -85,7 +111,17 @@ hr {
 }
 
 .first {
-  padding-top: 20px;
+  padding-top: 40px;
+}
+
+#courses {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 0;
 }
 
 #skills {
@@ -96,4 +132,160 @@ hr {
   justify-content: flex-start;
   align-items: center;
   padding: 100px 0;
+}
+
+#project {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.project-title {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.logo-viroll {
+  padding-top: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  font-family: "VIROLL-logo" !important;
+  font-size: 1.7em;
+}
+
+.date-sub {
+  font-size: 0.8em;
+}
+
+.flex-images {
+  margin: 0px 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.screenshot {
+  margin: 10px;
+  width: 15%;
+}
+.caption {
+  font-size: 0.6em;
+}
+
+.uplink-logo {
+  font-family: "Uplink-logo" !important ;
+  font-size: 2em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.standard {
+  font-family: "OpenSans-Black" !important;
+  font-size: 1.8em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+footer {
+  min-height: 20vh;
+}
+
+.socials {
+  margin: 0px 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 740px) {
+  h1 {
+    font-size: 2.6em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  body {
+    font-size: 1.2em;
+  }
+  .logo-viroll {
+    font-size: 1.5em;
+  }
+  .uplink-logo {
+    font-size: 1.7em;
+  }
+  .standard {
+    font-size: 1.5em;
+  }
+
+  p {
+    padding: 20px 0px;
+  }
+  .item {
+    padding: 10px 0px;
+  }
+
+  section {
+    margin-top: 0;
+    height: 90vh;
+  }
+
+  #about {
+    padding: 50px 0;
+  }
+
+  #courses {
+    padding: 50px 0;
+  }
+
+  #skills {
+    padding: 50px 0;
+  }
+
+  #project {
+    padding: 50px 0;
+  }
+
+  .flex-images {
+    justify-content: space-evenly;
+  }
+
+  .screenshot {
+    width: 20%;
+  }
+  .sub {
+    padding: 15px 0;
+  }
+
+  .img {
+    width: 25%;
+  }
+
+  .first {
+    padding-top: 30px;
+  }
+
+  .socials {
+    margin: 0 20%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .img {
+    width: 35%;
+  }
+  .screenshot {
+    width: 45%;
+    margin: 10px 0;
+  }
 }
