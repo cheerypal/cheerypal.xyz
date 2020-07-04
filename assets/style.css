@@ -1,26 +1,31 @@
 @font-face {
   src: url("./fonts/OpenSans-ExtraBold.ttf");
   font-family: "OpenSans-Black";
+  font-display: swap;
 }
 
 @font-face {
   src: url("./fonts/OpenSans-Light.ttf");
   font-family: "OpenSans-Light";
+  font-display: swap;
 }
 
 @font-face {
   src: url("./fonts/OpenSans-SemiBold.ttf");
   font-family: "links";
+  font-display: swap;
 }
 
 @font-face {
   src: url("./fonts/harlowsolidplain.otf");
   font-family: "Uplink-logo";
+  font-display: swap;
 }
 
 @font-face {
   src: url("./fonts/Kanit-Black.ttf");
   font-family: "VIROLL-logo";
+  font-display: swap;
 }
 
 body {
@@ -63,9 +68,20 @@ a {
   font-family: "links";
   color: black;
   transition: 0.1s all ease-in-out;
+  text-decoration: #686868;
 }
 a:hover {
-  font-size: 1.1em;
+  text-decoration: underline dashed #686868;
+}
+
+.blog-link {
+  padding: 1% 0;
+  font-size: 1.2em;
+  text-decoration: #686868;
+}
+
+.blog-link:hover {
+  text-decoration: underline dashed #686868;
 }
 
 .sub {
