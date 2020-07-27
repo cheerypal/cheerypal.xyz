@@ -23,6 +23,14 @@
   font-family: "VIROLL-logo";
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
 body {
   font-family: "OpenSans-Light";
   font-size: 1.4em;
