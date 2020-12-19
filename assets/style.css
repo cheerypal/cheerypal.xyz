@@ -1,20 +1,174 @@
+/*fonts*/
 @font-face {
   src: url("/assets/fonts/Rubik-Regular.ttf");
-  font-family: "Rubik-Reg", sans-serif;
+  font-family: "Rubik-Reg";
 }
 
 @font-face {
-  src: url("/assets/fonts/Rubik-Black.ttf");
-  font-family: "Rubik-Black", sans-serif;
+  src: url("/assets/fonts/Rubik-Bold.ttf");
+  font-family: "Rubik-Bold";
+  font-weight: 700;
 }
 
 @font-face {
   src: url("/assets/fonts/Rubik-Light.ttf");
-  font-family: "Rubik-Light", sans-serif;
+  font-family: "Rubik-Light";
+  font-weight: 300;
 }
 
+/*root settings*/
+:root {
+  --dark-main: #00b7b7;
+  --dark-background: #161616;
+  --dark-content-color: #cccbcb;
+  --day-content-color: #707070;
+}
+
+/*dark/day theme colours*/
 @media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-background);
+    color: var(--dark-content-color);
+  }
+  h1 {
+    color: var(--dark-main);
+  }
+  h2 {
+    color: var(--dark-main);
+  }
+  h3 {
+    color: #dddddd;
+  }
+  .btn {
+    background-color: var(--dark-main);
+    color: var(--dark-background);
+  }
+  .btn-link {
+    color: var(--dark-background);
+  }
+  .link,
+  .viroll-link {
+    color: var(--dark-content-color);
+  }
+  .link:hover,
+  .viroll-link:hover {
+    color: var(--dark-main);
+  }
 }
 
 @media (prefers-color-scheme: day) {
+  body {
+    background-color: #ffffff;
+    color: var(--day-content-color);
+  }
+  h1 {
+    color: #000;
+  }
+  h2 {
+    color: #000;
+  }
+  h3 {
+    color: #202020;
+  }
+  .btn {
+    background-color: #000000;
+    color: #fff;
+  }
+  .btn-link {
+    color: #ffffff;
+  }
+  .link,
+  .viroll-link {
+    color: #000000;
+  }
+  .link:hover,
+  .viroll-link:hover {
+    color: var(--day-content-color);
+  }
+}
+
+body {
+  font-family: "Rubik-Reg";
+  background-image: url("/assets/pp2.png");
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-size: 45%;
+  background-repeat: no-repeat;
+}
+
+#main {
+  margin: 5% 20% 0 20%;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#about {
+  margin-top: 15%;
+}
+
+.col-left {
+  width: 45%;
+  margin-right: 3%;
+}
+
+h1 {
+  font-family: "Rubik-Bold";
+  font-size: 4.5em;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: "Rubik-Bold";
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Rubik-Reg";
+  font-size: 1.3em;
+}
+
+h5 {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik-Bold";
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.btn {
+  margin-top: 2%;
+  padding: 10px 40px;
+  font-family: "Rubik-Bold";
+  font-size: 1.1em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.links {
+  padding-top: 20px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.link {
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
 }
