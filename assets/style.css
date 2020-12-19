@@ -1,0 +1,20 @@
+@font-face {
+  src: url("/assets/fonts/Rubik-Regular.ttf");
+  font-family: "Rubik-Reg", sans-serif;
+}
+
+@font-face {
+  src: url("/assets/fonts/Rubik-Black.ttf");
+  font-family: "Rubik-Black", sans-serif;
+}
+
+@font-face {
+  src: url("/assets/fonts/Rubik-Light.ttf");
+  font-family: "Rubik-Light", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+@media (prefers-color-scheme: day) {
+}
