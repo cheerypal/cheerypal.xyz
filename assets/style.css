@@ -21,95 +21,43 @@
   --dark-main: #00b7b7;
   --dark-background: #161616;
   --dark-content-color: #cccbcb;
-  --day-content-color: #707070;
 }
 
-/*dark theme colours*/
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--dark-background);
-    color: var(--dark-content-color);
-  }
-  h1 {
-    color: var(--dark-main);
-  }
-  h2 {
-    color: var(--dark-main);
-  }
-  h3 {
-    color: #dddddd;
-  }
-  .btn {
-    background-color: var(--dark-background);
-    color: var(--dark-content-color);
-    border: 1px solid var(--dark-main);
-  }
-  .btn:hover {
-    background-color: var(--dark-main);
-    color: var(--dark-background);
-  }
-  .btn-link {
-    color: var(--dark-background);
-  }
-  .link,
-  .h3-link {
-    color: var(--dark-content-color);
-  }
-  .link:hover,
-  .h3-link:hover {
-    color: var(--dark-main);
-  }
+/*dark theme*/
+body {
+  background-color: var(--dark-background);
+  color: var(--dark-content-color);
 }
-
-/*light theme colours*/
-@media (prefers-color-scheme: day) {
-  body {
-    background-color: #ffffff;
-    color: var(--day-content-color);
-  }
-  h1 {
-    color: #000;
-  }
-  h2 {
-    color: #000;
-  }
-  h3 {
-    color: var(--day-content-color);
-  }
-  .btn {
-    background-color: transparent;
-    border: 1px solid var(--dark-background);
-    color: #000000;
-  }
-
-  .btn:hover {
-    background-color: #000000;
-    color: #ffffff;
-  }
-
-  .btn-link {
-    color: #ffffff;
-  }
-  .link,
-  .h3-link {
-    color: var(--day-content-color);
-  }
-
-  .fa,
-  h5 {
-    color: #000;
-  }
-
-  .h3-link:hover {
-    color: #000;
-  }
-
-  .link:hover,
-  .fa:hover,
-  h5:hover {
-    color: var(--day-content-color);
-  }
+h1 {
+  color: var(--dark-main);
 }
+h2 {
+  color: var(--dark-main);
+}
+h3 {
+  color: #dddddd;
+}
+.btn {
+  background-color: var(--dark-background);
+  color: var(--dark-content-color);
+  border: 1px solid var(--dark-main);
+}
+.btn:hover {
+  background-color: var(--dark-main);
+  color: var(--dark-background);
+}
+.btn-link {
+  color: var(--dark-background);
+}
+.link,
+.h3-link {
+  color: var(--dark-content-color);
+}
+.link:hover,
+.h3-link:hover {
+  color: var(--dark-main);
+}
+/* end of dark theme*/
 
 /*Main CSS*/
 body {
