@@ -24,7 +24,7 @@
   --day-content-color: #707070;
 }
 
-/*dark/day theme colours*/
+/*dark theme colours*/
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--dark-background);
@@ -40,6 +40,11 @@
     color: #dddddd;
   }
   .btn {
+    background-color: var(--dark-background);
+    color: var(--dark-content-color);
+    border: 1px solid var(--dark-main);
+  }
+  .btn:hover {
     background-color: var(--dark-main);
     color: var(--dark-background);
   }
@@ -47,15 +52,16 @@
     color: var(--dark-background);
   }
   .link,
-  .viroll-link {
+  .h3-link {
     color: var(--dark-content-color);
   }
   .link:hover,
-  .viroll-link:hover {
+  .h3-link:hover {
     color: var(--dark-main);
   }
 }
 
+/*light theme colours*/
 @media (prefers-color-scheme: day) {
   body {
     background-color: #ffffff;
@@ -68,35 +74,56 @@
     color: #000;
   }
   h3 {
-    color: #202020;
+    color: var(--day-content-color);
   }
   .btn {
-    background-color: #000000;
-    color: #fff;
+    background-color: transparent;
+    border: 1px solid var(--dark-background);
+    color: #000000;
   }
+
+  .btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
   .btn-link {
     color: #ffffff;
   }
   .link,
-  .viroll-link {
-    color: #000000;
+  .h3-link {
+    color: var(--day-content-color);
   }
+
+  .fa,
+  h5 {
+    color: #000;
+  }
+
+  .h3-link:hover {
+    color: #000;
+  }
+
   .link:hover,
-  .viroll-link:hover {
+  .fa:hover,
+  h5:hover {
     color: var(--day-content-color);
   }
 }
 
+/*Main CSS*/
 body {
-  font-family: "Rubik-Reg";
   background-image: url("/assets/pp2.png");
   background-position: right bottom;
   background-attachment: fixed;
   background-size: 45%;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 #main {
+  font-family: "Rubik-Reg";
   margin: 5% 20% 0 20%;
   padding: 0;
   display: flex;
@@ -148,7 +175,7 @@ p {
   font-family: "Rubik-Bold";
   font-size: 1.1em;
   outline: none;
-  border: none;
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -169,6 +196,72 @@ p {
   text-decoration: none;
 }
 
-.img {
-  width: 100%;
+.h3-link {
+  text-decoration: none;
+}
+
+/*Main CSS logic*/
+@media screen and (max-width: 1366px) {
+  #main {
+    margin: 10% 10% 5% 10%;
+  }
+  .col-left {
+    width: 50%;
+  }
+  body {
+    background-size: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #main {
+    margin: 2% 10% 5% 10%;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .col-left {
+    width: 50%;
+  }
+  body {
+    background-size: 55%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .col-left {
+    width: 100%;
+  }
+  body {
+    background-size: 0%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  .link {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+  #main {
+    margin: 2% 5% 20% 5%;
+  }
 }
