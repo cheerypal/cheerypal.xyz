@@ -23,6 +23,24 @@
   --dark-content-color: #cccbcb;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-main);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #008d8d;
+}
+
 /*dark theme*/
 body {
   background-color: var(--dark-background);
@@ -148,6 +166,23 @@ p {
   text-decoration: none;
 }
 
+/*Projects section*/
+#additional {
+  margin-top: 15%;
+  height: 50vh;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 50%;
+  border: 1px solid var(--dark-main);
+}
+
 /*Main CSS logic*/
 @media screen and (max-width: 1366px) {
   #main {
@@ -210,6 +245,6 @@ p {
     font-size: 1em;
   }
   #main {
-    margin: 2% 5% 20% 5%;
+    margin: 2% 5% 0% 5%;
   }
 }
