@@ -18,6 +18,24 @@
   --background-color: #2e282a;
   --main-color: #e4572e;
   --text-color: #f5f5f5;
+  --card-back: #272224;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #df4b1e;
 }
 
 * {
@@ -27,6 +45,38 @@
 
 body {
   background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "mon-reg";
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--main-color);
+  font-family: "mon-semi-bold";
+}
+
+h2,
+h3 {
+  color: var(--main-color);
+  margin-bottom: 5%;
+  font-family: "mon-bold";
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.img-top {
+  margin-top: 3%;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 section {
@@ -35,8 +85,36 @@ section {
   flex-flow: row wrap;
 }
 
+p {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10% 0;
+}
+
 .col {
   width: 50%;
+}
+
+.text-col {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text {
+  align-items: flex-start;
+  padding: 0 20%;
+  text-align: left;
 }
 
 .highlighted {
@@ -44,4 +122,59 @@ section {
 }
 
 .profile-pic {
+  background-image: url("./images/pp2.png");
+  background-repeat: no-repeat;
+  background-position: right-bottom;
+  background-size: 100%;
+}
+
+.icon-img {
+  width: 50%;
+}
+
+.img-smaller {
+  width: 30%;
+}
+
+.invert {
+  color: var(--background-color);
+}
+
+.bold {
+  font-family: "mon-bold";
+  font-size: 2.5em;
+}
+
+.flex-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  padding: 30px;
+  margin: 3%;
+  width: 30%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+hr {
+  border-color: #858585;
+}
+
+.card-desc,
+.card-sub {
+  margin: 5% 0;
+  font-size: 1.2em;
+}
+
+.card-li {
+  padding: 3% 0 !important;
 }
