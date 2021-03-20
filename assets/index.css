@@ -1,164 +1,175 @@
 /* Fonts and Colour Scheme*/
 @font-face {
-	font-family: "mon-bold";
-	src: url("./fonts/Montserrat-Bold.ttf");
+  font-family: "mon-bold";
+  src: url("./fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
-	font-family: "mon-reg";
-	src: url("./fonts/Montserrat-Regular.ttf");
+  font-family: "mon-reg";
+  src: url("./fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
-	font-family: "mon-semi-bold";
-	src: url("./fonts/Montserrat-SemiBold.ttf");
+  font-family: "mon-semi-bold";
+  src: url("./fonts/Montserrat-SemiBold.ttf");
 }
 
 :root {
-	/* Default Colors */
-	--background-color: #242423;
-	--main-color: #00b7b7;
-	--text-color: #f5f5f5;
-	--alt-text: #cccbcb;
-	--highlight: #a833b9;
+  /* Default Colors */
+  --background-color: #242423;
+  --main-color: #00b7b7;
+  --text-color: #f5f5f5;
+  --alt-text: #cccbcb;
+  --highlight: #a833b9;
 
-	/* Flip Colors */
-	--background-colors-flip: #00b7b7;
-	--text-color-flip: #242423;
+  /* Flip Colors */
+  --background-colors-flip: #00b7b7;
+  --text-color-flip: #242423;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-	width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--background-color);
+  background: var(--background-color);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--main-color);
-	border-radius: 0px;
+  background: var(--main-color);
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--main-color);
+  background: var(--main-color);
 }
 
 ::selection {
-	background: var(--highlight);
+  background: var(--highlight);
 }
 
 ::-moz-selection {
-	background: var(--highlight);
+  background: var(--highlight);
 }
 
 /* Styles */
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .preload * {
-	-webkit-transition: none !important;
-	-moz-transition: none !important;
-	-ms-transition: none !important;
-	-o-transition: none !important;
-	transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 
 body {
-	background-color: var(--background-colors-flip);
-	font-size: 16px;
-	font-family: "mon-reg";
+  background-color: var(--background-colors-flip);
+  font-size: 16px;
+  font-family: "mon-reg";
 }
 
 h1,
 h2 {
-	color: var(--main-color);
-	font-family: "mon-bold";
-	margin: 3% 0;
-	user-select: none;
+  color: var(--main-color);
+  font-family: "mon-bold";
+  margin: 3% 0;
+  user-select: none;
 }
 
 h1 {
-	font-size: 4em;
+  font-size: 4em;
 }
 
 h2 {
-	font-size: 3em;
+  font-size: 3em;
 }
 
 h3 {
-	font-size: 1.3em;
-	font-family: "mon-semi-bold";
-	margin: 1% 0;
+  font-size: 1.3em;
+  font-family: "mon-semi-bold";
+  margin: 1% 0;
 }
 
 p {
-	margin: 3% 0;
-	padding-right: 10%;
-	font-size: 1.1em;
+  margin: 3% 0;
+  padding-right: 10%;
+  font-size: 1.1em;
 }
 
 button {
-	background-color: transparent;
-	padding: 15px 60px;
-	outline: none;
-	border: 1px solid var(--main-color);
-	font-size: 1.1em;
-	font-family: "mon-semi-bold";
-	color: var(--text-color);
-	margin: 5% 0;
-	border-radius: 5px;
-	transition: 0.3s all ease-in-out;
-	user-select: none;
+  background-color: transparent;
+  padding: 15px 60px;
+  outline: none;
+  border: 1px solid var(--main-color);
+  font-size: 1.1em;
+  font-family: "mon-semi-bold";
+  color: var(--text-color);
+  margin: 5% 0;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+  user-select: none;
 }
 
 button:hover {
-	cursor: pointer;
-	background-color: var(--main-color);
-	color: #000;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: #000;
 }
 
 #title {
-	background-color: var(--background-color);
-	background-image: url("./images/pp2.png");
-	background-repeat: no-repeat;
-	background-size: 45%;
-	background-position: bottom right;
-	color: var(--text-color);
-	height: 110vh;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  background-color: var(--background-color);
+  background-image: url("./images/pp2.png");
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: bottom right;
+  color: var(--text-color);
+  height: 110vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 }
 
 #about {
-	margin: 10% 0;
+  margin: 10% 0;
 }
 
 .col {
-	width: 35%;
-	padding: 0 15%;
+  width: 35%;
+  padding: 0 15%;
 }
 
 #skills {
-	height: 50vh;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
+  height: 50vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-#skills h2 {
-	color: var(--text-color-flip);
+#skills h2,
+h4 {
+  color: var(--text-color-flip);
+  transform: rotate(353deg);
+}
+
+.chart-container {
+  transform: rotate(353deg);
+  position: relative;
+  height: 40vh;
+  width: 50%;
+  font-size: 1.2em;
 }
 
 #projects {
-	height: 100vh;
-	background-color: var(--background-color);
-	clip-path: polygon(0% 20%, 100% 0, 100% 100%, 0% 100%);
+  height: 100vh;
+  background-color: var(--background-color);
+  clip-path: polygon(0% 20%, 100% 0, 100% 100%, 0% 100%);
 }

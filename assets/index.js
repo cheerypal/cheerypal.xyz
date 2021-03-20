@@ -11,14 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   var languagesUsed = {
-    CSS: 0,
-    HTML: 0,
     Vue: 0,
     JavaScript: 0,
     Python: 0,
     C: 0,
     PHP: 0,
-    Shell: 0,
   };
 
   var total = 0;
@@ -55,19 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
               total = totalBytes(languagesUsed);
               sessionStorage.setItem("total", total);
             })
-            .catch((err) => {});
+            .catch((err) => {
+              console.log("Encountered an error lol");
+            });
         }
       });
   };
 
   const langaugeXP = (langs) => {
     try {
-      if (langs.hasOwnProperty("CSS")) {
-        languagesUsed.CSS += langs.CSS;
-      }
-      if (langs.hasOwnProperty("HTML")) {
-        languagesUsed.HTML += langs.HTML;
-      }
       if (langs.hasOwnProperty("Python")) {
         languagesUsed.Python += langs.Python;
       }
@@ -82,9 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       if (langs.hasOwnProperty("C")) {
         languagesUsed.C += langs.C;
-      }
-      if (langs.hasOwnProperty("Shell")) {
-        languagesUsed.Shell += langs.Shell;
       }
     } catch (e) {
       console.log("undefined encountered");

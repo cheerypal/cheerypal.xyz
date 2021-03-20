@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="./assets/index.js" type="text/javascript"></script>
-		<link rel="stylesheet" href="./assets/index.css" />
-		<title>Euan Gordon</title>
-	</head>
-	<body class="preload">
-		<!-- Title section -->
-		<section id="title">
-			<div class="col">
-				<div>
-					<h1>Euan Gordon</h1>
-					<h3>Final Year Computer Science Student</h3>
-					<h3>Heriot-Watt University, Edinburgh</h3>
-				</div>
-				<!-- About Section -->
-				<div id="about">
-					<h2>About Me</h2>
-					<p>
-						Final year computer science student, with strong expertise in
-						network security, machine learning and software development.
-						<br /><br />
-						Currently working on my honours project that focuses on developing a
-						trustworthy and fair ad-blocker.
-						<br /><br />
-						Looking for a graduate software developer role for after May 2021.
-					</p>
-					<a href="mailto:euangordon32@gmail.com">
-						<button>Request CV</button>
-					</a>
-				</div>
-			</div>
-		</section>
-		<section id="skills">
-			<h2>Skills</h2>
-			<div class="stat-group"></div>
-		</section>
-		<section id="projects"></section>
-		<section id="footer"></section>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <title>Euan Gordon</title>
+  </head>
+  <body class="preload">
+    <!-- Title section -->
+    <section id="title">
+      <div class="col">
+        <div>
+          <h1>Euan Gordon</h1>
+          <h3>Final Year Computer Science Student</h3>
+          <h3>Heriot-Watt University, Edinburgh</h3>
+        </div>
+        <!-- About Section -->
+        <div id="about">
+          <h2>About Me</h2>
+          <p>
+            Final year computer science student, with strong expertise in
+            network security, machine learning and software development.
+            <br /><br />
+            Currently working on my honours project that focuses on developing a
+            trustworthy and fair ad-blocker.
+            <br /><br />
+            Looking for a graduate software developer role for after May 2021.
+          </p>
+          <a href="mailto:euangordon32@gmail.com">
+            <button>Request CV</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Languages and Skills</h2>
+      <h4>Source: GitHub</h4>
+      <div class="chart-container">
+        <canvas id="skillsChart" class="charts"></canvas>
+      </div>
+
+      <script src="assets/buildChart.js"></script>
+    </section>
+    <section id="projects"></section>
+    <section id="footer"></section>
+  </body>
 </html>
