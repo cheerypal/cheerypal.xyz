@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.remove("preload");
 
   //init localstorage
-
   if (typeof Storage !== "undefined") {
     if (!sessionStorage.languages)
       sessionStorage.setItem("languages", JSON.stringify([]));
@@ -59,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   };
 
+  //get langauges and their bytes
   const langaugeXP = (langs) => {
     try {
       if (langs.hasOwnProperty("Python")) {
@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  //return total bytes
   const totalBytes = (json) => {
     let total = 0;
     for (let i in json) {
@@ -92,4 +93,23 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   getLanguages();
+
+  //detect if the user has scrolled past a section
+  window.addEventListener("scroll", () => {
+    var skills = document.getElementById("skills");
+    var skills_text_animation = document.getElementsByClassName(
+      "skills-appear"
+    );
+    if (window.scrollY < skills.offsetTop) {
+      setTimeout(() => {
+        skills.classList.remove("skills-height");
+        skills.classList.add("animate");
+      }, 500);
+      setTimeout(() => {
+        for (let i in skills_text_animation) {
+          skills_text_animation[i].classList.add("fade-in");
+        }
+      }, 600);
+    }
+  });
 });
