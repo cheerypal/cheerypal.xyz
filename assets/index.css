@@ -151,7 +151,6 @@ button:hover {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 #skills h2,
@@ -166,6 +165,7 @@ h4 {
   height: 40vh;
   width: 50%;
   font-size: 1.2em;
+  margin: 1% 0;
 }
 
 #projects {
