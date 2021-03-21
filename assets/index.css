@@ -102,7 +102,7 @@ p {
   font-size: 1.1em;
 }
 
-button {
+.btn-cv {
   background-color: transparent;
   padding: 15px 60px;
   outline: none;
@@ -116,7 +116,7 @@ button {
   user-select: none;
 }
 
-button:hover {
+.btn-cv:hover {
   cursor: pointer;
   background-color: var(--main-color);
   color: #000;
@@ -203,7 +203,7 @@ h4 {
 }
 
 #projects {
-  height: 100vh;
+  height: 110vh;
   background-color: var(--background-color);
   clip-path: polygon(0% 20%, 100% 0, 100% 80%, 0% 100%);
   margin: 0 5%;
@@ -220,17 +220,100 @@ h4 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: 5% 0;
 }
 
 .card {
-  height: 30vh;
   width: 25%;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
-  padding: 30px;
   transition: all ease-in-out 0.2s;
+  color: var(--text-color);
+  font-family: "mon-reg";
+}
+
+.card h3,
+h4 {
+  font-family: "mon-semi-bold";
+  color: var(--main-color);
+  user-select: none;
 }
 
 .card:hover {
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+.project-group {
+  margin: 5% 0;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.flex-card {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 10% 0;
+}
+
+@keyframes move-right {
+  0% {
+    padding-left: 5px;
+  }
+  100% {
+    padding-left: 20px;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    padding-right: 5px;
+  }
+  100% {
+    padding-right: 20px;
+  }
+}
+
+.link {
+  color: var(--main-color);
+  font-family: "mon-semi-bold";
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--highlight);
+  cursor: pointer;
+}
+
+.link-right:hover {
+  animation-name: move-right;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+.link-left:hover {
+  animation-name: move-left;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+#language-group {
+  display: flex;
+  flex-flow: row wrap;
+
+  margin: 2% 0;
+}
+
+.lang {
+  margin: 2% 5% 2% 0;
+  font-size: 1.1em;
 }
