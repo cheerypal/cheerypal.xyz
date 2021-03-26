@@ -134,7 +134,6 @@ p {
   flex-flow: row wrap;
   align-items: center;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-  margin: 0 5%;
 }
 
 #about {
@@ -159,7 +158,7 @@ p {
 
 .animate {
   animation: expand 0.5s ease-in-out;
-  height: 50vh;
+  height: 45vh;
 }
 
 @keyframes expand {
@@ -167,7 +166,7 @@ p {
     height: 0vh;
   }
   100% {
-    height: 50vh;
+    height: 45vh;
   }
 }
 
@@ -196,18 +195,23 @@ h4 {
 
 .chart-container {
   position: relative;
-  height: 40vh;
+  height: 45vh;
   width: 50%;
   font-size: 1.2em;
   margin: 1% 0;
 }
 
 #projects {
-  height: 110vh;
+  height: 120vh;
   background-color: var(--background-color);
   clip-path: polygon(0% 20%, 100% 0, 100% 80%, 0% 100%);
-  margin: 0 5%;
   padding: 20% 15% 0 15%;
+}
+
+#projects h3 {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 .projects-container {
@@ -230,11 +234,19 @@ h4 {
   font-family: "mon-reg";
 }
 
-.card h3,
+#projects .card h3,
 h4 {
-  font-family: "mon-semi-bold";
+  font-family: "mon-bold";
   color: var(--main-color);
   user-select: none;
+}
+
+#projects .card h3 {
+  font-size: 1.7em;
+}
+
+#projects .card h4 {
+  font-size: 1.2em;
 }
 
 .card:hover {
@@ -259,8 +271,11 @@ h4 {
 .button-group {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 10% 0;
+  justify-content: flex-start;
+}
+
+.button-group .link {
+  padding: 0 5% 0 0;
 }
 
 @keyframes move-right {
@@ -309,11 +324,14 @@ h4 {
 #language-group {
   display: flex;
   flex-flow: row wrap;
-
   margin: 2% 0;
 }
 
 .lang {
   margin: 2% 5% 2% 0;
   font-size: 1.1em;
+}
+
+.sect {
+  margin: 5% 0;
 }
