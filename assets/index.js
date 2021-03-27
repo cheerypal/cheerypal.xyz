@@ -100,11 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     if (window.scrollY < skills.offsetTop + 10) {
       setTimeout(() => {
-        skills.classList.remove("skills-height");
-        skills.classList.add("animate");
-      }, 500);
-
-      setTimeout(() => {
         for (let i in skills_text_animation) {
           try {
             skills_text_animation[i].classList.add("fade-in");
@@ -112,14 +107,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }, 600);
     }
-  });
 
-  window.addEventListener("scroll", () => {
     var projects_COMP = document.getElementById("projects-container");
-    if (window.scrollY < projects_COMP.offsetTop) {
+    if (window.scrollY > skills.offsetTop) {
       setTimeout(() => {
         projects_COMP.classList.add("fade-in");
-      }, 500);
+      }, 600);
+    }
+
+    var contact = document.getElementById("contact");
+    if (window.scrollY > projects_COMP.offsetTop) {
+      setTimeout(() => {
+        contact.classList.add("fade-in");
+      }, 600);
     }
   });
 });

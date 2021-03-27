@@ -46,9 +46,9 @@ const displayChart = (jsonData) => {
     },
     options: {
       animation: {
-        duration: 2000,
-        delay: 500,
-        easing: "easeInOutQuad",
+        duration: 1000,
+        delay: 1000,
+        easing: "linear",
         loop: false,
       },
 

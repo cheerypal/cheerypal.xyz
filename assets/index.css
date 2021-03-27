@@ -150,10 +150,7 @@ p {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-}
-
-.skills-height {
-  height: 0vh;
+  height: 50vh;
 }
 
 .animate {
@@ -172,7 +169,8 @@ p {
 
 .skills-appear,
 .project-appear,
-.project-animate {
+.project-animate,
+.contact-animate {
   opacity: 0;
 }
 
@@ -193,6 +191,7 @@ p {
 #skills h2,
 #skills h4 {
   color: var(--text-color-flip);
+  margin: 2% 0;
 }
 
 #skills a {
@@ -201,18 +200,26 @@ p {
 
 .chart-container {
   position: relative;
-  height: 45vh;
+  height: 30vh;
   width: 50%;
   font-size: 1.2em;
   margin: 1% 0;
 }
 
 #projects {
-  height: 110vh;
+  height: 140vh;
   background-color: var(--background-color);
   clip-path: polygon(0% 21%, 100% 0, 100% 80%, 0% 100%);
-  padding: 15% 15% 0 15%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
   font-size: 1em;
+}
+
+#projects a {
+  text-decoration: none;
 }
 
 #projects h3 {
@@ -319,16 +326,53 @@ h4 {
 }
 
 #contact {
+  height: 30vh;
+  padding: 0% 15%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-flip);
+  font-size: 1.1em;
+}
+
+#contact h2,
+#contact h4 {
+  color: var(--text-color-flip);
+}
+
+.socials-group {
+  display: flex;
+  flex-flow: row column;
+  justify-content: space-evenly;
+  margin: 3% 0;
+}
+
+.social-link {
+  color: var(--text-color-flip);
+  text-decoration: none;
+  margin: 0 10%;
+}
+
+.social-link:hover {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+.socials-group .fa {
+  font-size: 2.1em;
+  padding: 10px 20px;
+}
+
+#footer {
   height: 20vh;
-  padding: 15% 15% 0 15%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
 
-#footer {
-  height: 30vh;
-  background-color: var(--background-color);
-  clip-path: polygon(0% 100%, 100% 0, 100% 100%, 0% 100%);
+#footer h4 {
+  padding-top: 5%;
+  color: var(--text-color-flip);
 }
