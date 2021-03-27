@@ -170,7 +170,9 @@ p {
   }
 }
 
-.skills-appear {
+.skills-appear,
+.project-appear,
+.project-animate {
   opacity: 0;
 }
 
@@ -189,8 +191,12 @@ p {
 }
 
 #skills h2,
-h4 {
+#skills h4 {
   color: var(--text-color-flip);
+}
+
+#skills a {
+  text-decoration: none;
 }
 
 .chart-container {
@@ -202,10 +208,11 @@ h4 {
 }
 
 #projects {
-  height: 120vh;
+  height: 110vh;
   background-color: var(--background-color);
-  clip-path: polygon(0% 20%, 100% 0, 100% 80%, 0% 100%);
-  padding: 20% 15% 0 15%;
+  clip-path: polygon(0% 21%, 100% 0, 100% 80%, 0% 100%);
+  padding: 15% 15% 0 15%;
+  font-size: 1em;
 }
 
 #projects h3 {
@@ -214,23 +221,25 @@ h4 {
   padding: 0;
 }
 
-.projects-container {
+#projects-container {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   justify-content: center;
 }
 
 .flex-group {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .card {
-  width: 25%;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+  width: 23%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
   transition: all ease-in-out 0.2s;
   color: var(--text-color);
+  border-radius: 10px;
   font-family: "mon-reg";
 }
 
@@ -242,19 +251,19 @@ h4 {
 }
 
 #projects .card h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 #projects .card h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .card:hover {
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .project-group {
-  margin: 5% 0;
+  margin: 4% 0;
 }
 
 .project-img {
@@ -278,24 +287,6 @@ h4 {
   padding: 0 5% 0 0;
 }
 
-@keyframes move-right {
-  0% {
-    padding-left: 5px;
-  }
-  100% {
-    padding-left: 20px;
-  }
-}
-
-@keyframes move-left {
-  0% {
-    padding-right: 5px;
-  }
-  100% {
-    padding-right: 20px;
-  }
-}
-
 .link {
   color: var(--main-color);
   font-family: "mon-semi-bold";
@@ -307,18 +298,9 @@ h4 {
   cursor: pointer;
 }
 
-.link-right:hover {
-  animation-name: move-right;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.8s;
-  animation-iteration-count: infinite;
-}
-
-.link-left:hover {
-  animation-name: move-left;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.8s;
-  animation-iteration-count: infinite;
+.card-link {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 #language-group {
@@ -334,4 +316,19 @@ h4 {
 
 .sect {
   margin: 5% 0;
+}
+
+#contact {
+  height: 20vh;
+  padding: 15% 15% 0 15%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  height: 30vh;
+  background-color: var(--background-color);
+  clip-path: polygon(0% 100%, 100% 0, 100% 100%, 0% 100%);
 }

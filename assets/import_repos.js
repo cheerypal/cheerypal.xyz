@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const card = (logo, name, description, codeLink, websiteLink, lang) => {
     return `
-    <div class="card">
+    <div class="card projects-appear">
     <img src="assets/images/${logo}.png" class="project-img" />
+    <a href="${websiteLink}" class="card-link">
     <div class="flex-card">
       <div class="text-content">
         <h3>${name}</h3>
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
       </div>
     </div>
+    </a>
   </div>`;
   };
 
