@@ -150,7 +150,7 @@ p {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 40vh;
 }
 
 .animate {
@@ -200,14 +200,14 @@ p {
 
 .chart-container {
   position: relative;
-  height: 30vh;
-  width: 50%;
+  height: 25vh;
+  width: 45%;
   font-size: 1.2em;
   margin: 1% 0;
 }
 
 #projects {
-  height: 140vh;
+  min-height: 140vh;
   background-color: var(--background-color);
   clip-path: polygon(0% 21%, 100% 0, 100% 80%, 0% 100%);
   display: flex;
@@ -215,7 +215,6 @@ p {
   align-items: center;
   justify-content: center;
   padding: 0 15%;
-  font-size: 1em;
 }
 
 #projects a {
@@ -238,12 +237,12 @@ p {
 .flex-group {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .card {
-  width: 23%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+  width: 22%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
   transition: all ease-in-out 0.2s;
   color: var(--text-color);
   border-radius: 10px;
@@ -322,7 +321,7 @@ h4 {
 }
 
 .sect {
-  margin: 5% 0;
+  margin: 12% 0;
 }
 
 #contact {
@@ -370,9 +369,157 @@ h4 {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #footer h4 {
-  padding-top: 5%;
   color: var(--text-color-flip);
+}
+
+/* Reponsive Design*/
+@media screen and (max-width: 1366px) {
+  .card {
+    width: 28%;
+    margin: 1%;
+  }
+  #projects {
+    min-height: 100vh;
+    clip-path: polygon(0% 10%, 100% 0, 100% 90%, 0% 100%);
+  }
+
+  .chart-container {
+    width: 60%;
+  }
+  #title {
+    padding: 5% 0;
+    height: 80vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    width: 25%;
+    margin: 3%;
+  }
+
+  #projects {
+    padding: 5%;
+    min-height: 100vh;
+    overflow: none;
+    font-size: 0.8em;
+  }
+
+  .chart-container {
+    width: 70%;
+  }
+  #title {
+    font-size: 0.8em;
+  }
+  #skills {
+    font-size: 0.8em;
+  }
+  #contact {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .card {
+    width: 30%;
+  }
+  #projects {
+    padding: 10% 5%;
+    clip-path: polygon(0% 5%, 100% 0, 100% 95%, 0% 100%);
+  }
+  .chart-container {
+    margin: 2% 0;
+    width: 70%;
+    height: 30vh;
+  }
+  #skills {
+    text-align: center;
+    min-height: 60vh;
+  }
+  #title {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    background-image: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 30%;
+  }
+
+  .chart-container {
+    width: 80%;
+  }
+
+  #projects {
+    padding: 10% 1%;
+    clip-path: none;
+  }
+  #title {
+    clip-path: none;
+  }
+  #contact {
+    margin: 5% 0;
+    height: 20vh;
+  }
+  #footer {
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #contact {
+    height: 30vh;
+  }
+  #footer {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .card {
+    width: 60%;
+    margin: 5% 0;
+  }
+
+  #projects {
+    margin: 10% 0%;
+    clip-path: none;
+  }
+  .chart-container {
+    width: 90%;
+  }
+  #contact {
+    height: 20vh;
+  }
+  #footer {
+    height: 10vh;
+  }
+  .sect {
+    margin: 5% 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    width: 80%;
+  }
+
+  #contact h4 {
+    font-size: 0.8em;
+  }
 }

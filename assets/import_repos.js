@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${description}</p>
       </div>
       <div class="sect">
-        <h4>Created With:</h4>
+        <h4>Skill Used</h4>
         <div id="language-group">
           <p class="lang">${lang}</p>
         </div>
