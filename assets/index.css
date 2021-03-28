@@ -379,11 +379,12 @@ h4 {
 /* Reponsive Design*/
 @media screen and (max-width: 1366px) {
   .card {
-    width: 28%;
+    width: 31%;
     margin: 1%;
+    font-size: 0.9em;
   }
   #projects {
-    min-height: 100vh;
+    min-height: 110vh;
     clip-path: polygon(0% 10%, 100% 0, 100% 90%, 0% 100%);
   }
 
@@ -401,6 +402,7 @@ h4 {
   .card {
     width: 25%;
     margin: 3%;
+    font-size: 1em;
   }
 
   #projects {
@@ -497,7 +499,7 @@ h4 {
   }
 
   #projects {
-    margin: 10% 0%;
+    margin: 15% 0%;
     clip-path: none;
   }
   .chart-container {
@@ -517,9 +519,5 @@ h4 {
 @media screen and (max-width: 550px) {
   .card {
     width: 80%;
-  }
-
-  #contact h4 {
-    font-size: 0.8em;
   }
 }
