@@ -347,13 +347,13 @@ h4 {
   margin: 3% 0;
 }
 
-.social-link {
+.s-link {
   color: var(--text-color-flip);
   text-decoration: none;
   margin: 0 10%;
 }
 
-.social-link:hover {
+.s-link:hover {
   color: var(--highlight);
   text-decoration: none;
 }
