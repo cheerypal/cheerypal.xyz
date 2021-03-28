@@ -1,72 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Euan Gordon</title>
-    <meta name="description" content="Euan Gordon's Personal Website" />
-    <meta
-      name="keywords"
-      content="EuanGordon, Euan, Gordon, Heriot-Watt-University, HWU, CS, Computer,Science, euan, gordon"
-    />
-    <meta name="author" content="Euan Gordon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <link rel="icon" href="./assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/index.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link rel="stylesheet" href="./assets/index.css" />
+    <script src="assets/buildChart.js"></script>
+    <script src="assets/import_repos.js"></script>
+    <title>Euan Gordon</title>
   </head>
-  <body>
-    <!--Main Content-->
-    <section id="main">
-      <div class="col-left">
-        <h1>Euan Gordon</h1>
-        <h3>Final Year Computer Science Student</h3>
-        <h3>
-          <a href="https://www.hw.ac.uk" class="h3-link">
-            Heriot-Watt University</a
-          >,
-          <a href="https://edinburgh.org/" class="h3-link">Edinburgh</a>
-        </h3>
-        <div class="links">
-          <a href="https://viroll.herokuapp.com" class="link">
-            <h5>VIROLL</h5>
-          </a>
-          <a class="link" href="https://github.com/cheerypal"
-            ><i class="fa fa-github"></i
-          ></a>
-          <a
-            class="link"
-            href="https://www.linkedin.com/in/euan-gordon-8b984b151/"
-            ><i class="fa fa-linkedin"></i
-          ></a>
-          <a class="link" href="mailto:euangordon32@gmail.com"
-            ><i class="fa fa-at"></i
-          ></a>
+  <body class="preload">
+    <!-- Title section -->
+    <section id="title">
+      <div class="col">
+        <div>
+          <h1>Euan Gordon</h1>
+          <h3>Final Year Computer Science Student</h3>
+          <h3>Heriot-Watt University, Edinburgh</h3>
         </div>
-        <!--About section-->
-        <section id="about">
-          <h2>About Me</h2>
+
+        <!-- About Section -->
+        <div id="about">
           <p>
             Final year computer science student, with strong expertise in
             network security, machine learning and software development.
-          </p>
-          <p>
+            <br /><br />
             Currently working on my honours project that focuses on developing a
             trustworthy and fair ad-blocker.
           </p>
-          <p>
-            Looking for a graduate software developer role for after May 2021.
-          </p>
-          <a href="mailto:euangordon32@gmail.com" class="btn-link">
-            <button class="btn">Request CV</button>
-          </a>
-        </section>
-        <!--End of About-->
+        </div>
       </div>
     </section>
-    <!--End of main content-->
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="skills-appear">Skills</h2>
+      <a href="https://github.com/cheerypal"
+        ><h4 class="skills-appear">Source: GitHub</h4></a
+      >
+      <div class="chart-container skills-appear">
+        <canvas id="skillsChart" class="charts"></canvas>
+      </div>
+    </section>
+    <!-- Projects Section-->
+    <section id="projects">
+      <div id="projects-container" class="project-animate">
+        <h2>Projects</h2>
+        <h3>My Top 3 Projects</h3>
+        <div class="flex-group"></div>
+        <div id="github-projects" class="flex-group project-group"></div>
+        <a href="https://github.com/cheerypal" class="link"
+          >More On My GitHub!</a
+        >
+      </div>
+    </section>
+    <section id="contact" class="contact-animate">
+      <h2>Contact Me</h2>
+      <h4>Contact Me Via Any Of The Accounts Below</h4>
+      <div class="socials-group">
+        <a href="https://github.com/cheerypal" class="social-link">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="mailto:euangordon05@gmail.com" class="social-link">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/euan-gordon-8b984b151/"
+          class="social-link"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
+    <section id="footer">
+      <h4>Website created by Euan Gordon</h4>
+    </section>
   </body>
 </html>

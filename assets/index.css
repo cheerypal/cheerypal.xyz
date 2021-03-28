@@ -1,0 +1,525 @@
+/* Fonts and Colour Scheme*/
+@font-face {
+  font-family: "mon-bold";
+  src: url("./fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "mon-reg";
+  src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "mon-semi-bold";
+  src: url("./fonts/Montserrat-SemiBold.ttf");
+}
+
+:root {
+  /* Default Colors */
+  --background-color: #242423;
+  --main-color: #00b7b7;
+  --text-color: #f5f5f5;
+  --alt-text: #cccbcb;
+  --highlight: #a833b9;
+
+  /* Flip Colors */
+  --background-colors-flip: #00b7b7;
+  --text-color-flip: #242423;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+
+::selection {
+  background: var(--highlight);
+}
+
+::-moz-selection {
+  background: var(--highlight);
+}
+
+/* Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+body {
+  background-color: var(--background-colors-flip);
+  font-size: 16px;
+  font-family: "mon-reg";
+}
+
+h1,
+h2 {
+  color: var(--main-color);
+  font-family: "mon-bold";
+  margin: 3% 0;
+  user-select: none;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-family: "mon-semi-bold";
+  margin: 1% 0;
+}
+
+p {
+  margin: 3% 0;
+  padding-right: 10%;
+  font-size: 1.1em;
+}
+
+.btn-cv {
+  background-color: transparent;
+  padding: 15px 60px;
+  outline: none;
+  border: 1px solid var(--main-color);
+  font-size: 1.1em;
+  font-family: "mon-semi-bold";
+  color: var(--text-color);
+  margin: 5% 0;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+  user-select: none;
+}
+
+.btn-cv:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: #000;
+}
+
+#title {
+  background-color: var(--background-color);
+  background-image: url("./images/pp2.png");
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: bottom right;
+  color: var(--text-color);
+  height: 110vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+#about {
+  margin: 10% 0;
+}
+
+.col {
+  width: 35%;
+  padding: 0 15%;
+}
+
+#skills {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.animate {
+  animation: expand 0.5s ease-in-out;
+  height: 45vh;
+}
+
+@keyframes expand {
+  0% {
+    height: 0vh;
+  }
+  100% {
+    height: 45vh;
+  }
+}
+
+.skills-appear,
+.project-appear,
+.project-animate,
+.contact-animate {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fade_in 0.5s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#skills h2,
+#skills h4 {
+  color: var(--text-color-flip);
+  margin: 2% 0;
+}
+
+#skills a {
+  text-decoration: none;
+}
+
+.chart-container {
+  position: relative;
+  height: 25vh;
+  width: 45%;
+  font-size: 1.2em;
+  margin: 1% 0;
+}
+
+#projects {
+  min-height: 140vh;
+  background-color: var(--background-color);
+  clip-path: polygon(0% 21%, 100% 0, 100% 80%, 0% 100%);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15%;
+}
+
+#projects a {
+  text-decoration: none;
+}
+
+#projects h3 {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+#projects-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 22%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 0.2s;
+  color: var(--text-color);
+  border-radius: 10px;
+  font-family: "mon-reg";
+}
+
+#projects .card h3,
+h4 {
+  font-family: "mon-bold";
+  color: var(--main-color);
+  user-select: none;
+}
+
+#projects .card h3 {
+  font-size: 1.5em;
+}
+
+#projects .card h4 {
+  font-size: 1.1em;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.project-group {
+  margin: 4% 0;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.flex-card {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.button-group .link {
+  padding: 0 5% 0 0;
+}
+
+.link {
+  color: var(--main-color);
+  font-family: "mon-semi-bold";
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--highlight);
+  cursor: pointer;
+}
+
+.card-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+#language-group {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2% 0;
+}
+
+.lang {
+  margin: 2% 5% 2% 0;
+  font-size: 1.1em;
+}
+
+.sect {
+  margin: 12% 0;
+}
+
+#contact {
+  height: 30vh;
+  padding: 0% 15%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-flip);
+  font-size: 1.1em;
+}
+
+#contact h2,
+#contact h4 {
+  color: var(--text-color-flip);
+}
+
+.socials-group {
+  display: flex;
+  flex-flow: row column;
+  justify-content: space-evenly;
+  margin: 3% 0;
+}
+
+.social-link {
+  color: var(--text-color-flip);
+  text-decoration: none;
+  margin: 0 10%;
+}
+
+.social-link:hover {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+.socials-group .fa {
+  font-size: 2.1em;
+  padding: 10px 20px;
+}
+
+#footer {
+  height: 20vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#footer h4 {
+  color: var(--text-color-flip);
+}
+
+/* Reponsive Design*/
+@media screen and (max-width: 1366px) {
+  .card {
+    width: 28%;
+    margin: 1%;
+  }
+  #projects {
+    min-height: 100vh;
+    clip-path: polygon(0% 10%, 100% 0, 100% 90%, 0% 100%);
+  }
+
+  .chart-container {
+    width: 60%;
+  }
+  #title {
+    padding: 5% 0;
+    height: 80vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    width: 25%;
+    margin: 3%;
+  }
+
+  #projects {
+    padding: 5%;
+    min-height: 100vh;
+    overflow: none;
+    font-size: 0.8em;
+  }
+
+  .chart-container {
+    width: 70%;
+  }
+  #title {
+    font-size: 0.8em;
+  }
+  #skills {
+    font-size: 0.8em;
+  }
+  #contact {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .card {
+    width: 30%;
+  }
+  #projects {
+    padding: 10% 5%;
+    clip-path: polygon(0% 5%, 100% 0, 100% 95%, 0% 100%);
+  }
+  .chart-container {
+    margin: 2% 0;
+    width: 70%;
+    height: 30vh;
+  }
+  #skills {
+    text-align: center;
+    min-height: 60vh;
+  }
+  #title {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    background-image: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 30%;
+  }
+
+  .chart-container {
+    width: 80%;
+  }
+
+  #projects {
+    padding: 10% 1%;
+    clip-path: none;
+  }
+  #title {
+    clip-path: none;
+  }
+  #contact {
+    margin: 5% 0;
+    height: 20vh;
+  }
+  #footer {
+    height: 10vh;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #contact {
+    height: 30vh;
+  }
+  #footer {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .card {
+    width: 60%;
+    margin: 5% 0;
+  }
+
+  #projects {
+    margin: 10% 0%;
+    clip-path: none;
+  }
+  .chart-container {
+    width: 90%;
+  }
+  #contact {
+    height: 20vh;
+  }
+  #footer {
+    height: 10vh;
+  }
+  .sect {
+    margin: 5% 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    width: 80%;
+  }
+
+  #contact h4 {
+    font-size: 0.8em;
+  }
+}
