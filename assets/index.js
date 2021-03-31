@@ -1,7 +1,7 @@
 if (typeof Storage !== "undefined") {
-  if (!sessionStorage.languages)
-    sessionStorage.setItem("languages", JSON.stringify([]));
-  if (!sessionStorage.total) sessionStorage.setItem("total", 0);
+  if (!localStorage.languages)
+    localStorage.setItem("languages", JSON.stringify([]));
+  if (!localStorage.total) localStorage.setItem("total", 0);
 }
 
 var languagesUsed = {
@@ -24,7 +24,6 @@ const getLanguages = () => {
     })
     .then((jsonData) => {
       //fetch and store all repos in an array
-      console.log(jsonData);
       let repos = [];
       for (let i in jsonData) {
         repos.push(jsonData[i].name);
@@ -39,9 +38,9 @@ const getLanguages = () => {
           })
           .then((jsonData) => {
             langaugeXP(jsonData);
-            sessionStorage.setItem("languages", JSON.stringify(languagesUsed));
+            localStorage.setItem("languages", JSON.stringify(languagesUsed));
             total = totalBytes(languagesUsed);
-            sessionStorage.setItem("total", total);
+            localStorage.setItem("total", total);
           })
           .catch((err) => {
             console.log("Encountered an error lol");

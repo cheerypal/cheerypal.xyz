@@ -1,7 +1,7 @@
 const init = () => {
   var labels = ["Vue", "JavaScript", "Python", "C", "PHP"];
 
-  var savedData = JSON.parse(sessionStorage.getItem("languages"));
+  var savedData = JSON.parse(localStorage.getItem("languages"));
   var data = [];
   for (let i in savedData) {
     data.push(savedData[i]);
