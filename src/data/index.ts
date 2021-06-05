@@ -1,4 +1,4 @@
-import { Projects, Work, Mates, Social } from "./types";
+import { Work, Mates, Social } from "./types";
 
 export const work: Work = {
   languages: ["React", "React-Native", "AWS", "TypeScript"],
