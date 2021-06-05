@@ -1,8 +1,9 @@
 import { Action } from "redux";
-import { projects } from "../../data/index";
+import { uni, additional } from "../../data/index";
 
 const INITIAL_STATE = {
-  data: projects,
+  uni,
+  additional,
 };
 
 const projectReducer = (state = INITIAL_STATE, action: Action) => {

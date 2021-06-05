@@ -1,22 +1,17 @@
-export interface Projects {
-  university: [
-    {
-      id: number;
-      title: string;
-      description: string;
-      skills: string[];
-      link: string;
-    }
-  ];
-  additional: [
-    {
-      id: number;
-      title: string;
-      description: string;
-      skills: string[];
-      link: string;
-    }
-  ];
+export interface Uni {
+  id: number;
+  title: string;
+  description: string;
+  skills: string[];
+  link: string;
+}
+
+export interface Additional {
+  id: number;
+  title: string;
+  description: string;
+  skills: string[];
+  link: string;
 }
 
 export interface Work {
