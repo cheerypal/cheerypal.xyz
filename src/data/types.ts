@@ -28,3 +28,9 @@ export interface Mates {
   name: string;
   link: string;
 }
+
+export interface Social {
+  id: number;
+  name: string;
+  link: string;
+}

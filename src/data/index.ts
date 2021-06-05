@@ -1,10 +1,10 @@
-import { Projects, Work, Mates } from "./types";
+import { Projects, Work, Mates, Social } from "./types";
 
 export const work: Work = {
   languages: ["React", "React-Native", "AWS", "TypeScript"],
 };
 
-export const projects = {
+export const projects: {} = {
   university: [
     {
       id: 1,
@@ -68,5 +68,23 @@ export const mates: Mates[] = [
     id: 5,
     name: "Humiad",
     link: "https://humaidq.ae/",
+  },
+];
+
+export const social: Social[] = [
+  {
+    id: 1,
+    name: "twitter",
+    link: "https://twitter.com/Cheerypal_",
+  },
+  {
+    id: 2,
+    name: "github",
+    link: "https://github.com/Cheerypal",
+  },
+  {
+    id: 3,
+    name: "linkedin",
+    link: "https://www.linkedin.com/in/euan-gordon-8b984b151/",
   },
 ];
