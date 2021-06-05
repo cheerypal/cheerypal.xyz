@@ -1,5 +1,5 @@
 import { Action } from "redux";
-import { mates } from "../../data";
+import { mates } from "../../data/index";
 
 const INITIAL_STATE = {
   data: mates,

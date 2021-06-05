@@ -31,3 +31,11 @@ h1 {
   font-family: "mont-black";
   font-size: 5em;
 }
+
+a {
+  color: var(--primary-color);
+  font-size: 2em;
+  &:hover {
+    color: #f28123;
+  }
+}

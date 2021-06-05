@@ -1,5 +1,6 @@
 import React from "react";
 import { Title, SubTitle } from "./title-card-styles";
+import { SocialGroup } from "../social-group";
 
 export const TitleCard = (): JSX.Element => {
   return (
@@ -12,6 +13,7 @@ export const TitleCard = (): JSX.Element => {
         At Arch, I'm a backend engineer who's specialised in Serverless AWS
         development, TypeScript and Node.js.
       </SubTitle>
+      <SocialGroup />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { Action } from "redux";
-import { projects } from "../../data";
+import { projects } from "../../data/index";
 
 const INITIAL_STATE = {
   data: projects,

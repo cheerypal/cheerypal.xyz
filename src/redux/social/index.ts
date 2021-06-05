@@ -1,5 +1,5 @@
 import { Action } from "redux";
-import { social } from "../../data";
+import { social } from "../../data/index";
 
 const INITIAL_STATE = {
   data: social,

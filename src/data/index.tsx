@@ -1,7 +1,14 @@
 import { Work, Mates, Social } from "./types";
+import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export const work: Work = {
-  languages: ["React", "React-Native", "AWS", "TypeScript"],
+  languages: [
+    "React",
+    "React-Native",
+    "AWS",
+    "Redux/Redux-Persist",
+    "TypeScript",
+  ],
 };
 
 export const projects: {} = {
@@ -76,15 +83,18 @@ export const social: Social[] = [
     id: 1,
     name: "twitter",
     link: "https://twitter.com/Cheerypal_",
+    element: <FaTwitter />,
   },
   {
     id: 2,
     name: "github",
     link: "https://github.com/Cheerypal",
+    element: <FaGithub />,
   },
   {
     id: 3,
     name: "linkedin",
     link: "https://www.linkedin.com/in/euan-gordon-8b984b151/",
+    element: <FaLinkedinIn />,
   },
 ];
