@@ -1,9 +1,12 @@
 :root {
-  --primary-color: #000000;
-  --secondary-color: #ffffff;
-  --accent-color: #f28123;
-  padding: 0;
+  --primary-color: #fff;
+  --secondary-color: #100f13;
+  --accent-color: #cfa65f;
+}
+
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -25,17 +28,47 @@
 body {
   margin: 10%;
   font-family: "mont-reg";
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 h1 {
   font-family: "mont-black";
   font-size: 5em;
+  color: var(--accent-color);
 }
 
 a {
   color: var(--primary-color);
   font-size: 2em;
+
   &:hover {
-    color: #f28123;
+    color: var(--accent-color);
   }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8864c;
+}
+
+::selection {
+  background: var(--accent-color);
+}
+
+::-moz-selection {
+  background: var(--accent-color);
 }

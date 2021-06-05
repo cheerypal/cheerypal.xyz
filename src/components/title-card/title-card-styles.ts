@@ -13,3 +13,7 @@ export const SubTitle = styled.p`
   padding: 0;
   font-size: 1em;
 `;
+
+export const TitleCardContainer = styled.div`
+  height: 80vh;
+`;

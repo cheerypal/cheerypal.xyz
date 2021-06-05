@@ -1,10 +1,11 @@
 import React from "react";
-import { Title, SubTitle } from "./title-card-styles";
+import { TitleCardContainer, Title, SubTitle } from "./title-card-styles";
 import { SocialGroup } from "../social-group";
+import { CustomBtn } from "../custom-btn";
 
 export const TitleCard = (): JSX.Element => {
   return (
-    <div>
+    <TitleCardContainer>
       <Title>Software Engineer</Title>
       <SubTitle>
         Hi, I'm Euan, a Graduate Software Engineer working at Arch
@@ -14,6 +15,7 @@ export const TitleCard = (): JSX.Element => {
         development, TypeScript and Node.js.
       </SubTitle>
       <SocialGroup />
-    </div>
+      <CustomBtn title="Request CV" link="mailto:euangordon32@gmail.com" />
+    </TitleCardContainer>
   );
 };

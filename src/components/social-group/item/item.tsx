@@ -8,10 +8,8 @@ export const Item = (props: {
   element: JSX.Element;
 }): JSX.Element => {
   return (
-    <div>
-      <IconLink href={props.link}>
-        <>{props.element}</>
-      </IconLink>
-    </div>
+    <IconLink href={props.link}>
+      <>{props.element}</>
+    </IconLink>
   );
 };
