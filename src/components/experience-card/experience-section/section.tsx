@@ -4,7 +4,20 @@ import { CustomBtn } from "../../custom-btn";
 import { CustomList } from "../custom-list";
 
 const Paragraph = styled.p`
-  margin: 1% 0;
+  margin: 1% 50% 1% 0;
+  line-height: 1.5;
+`;
+
+const Seperator = styled.div`
+  margin: 0 0 10% 0;
+`;
+
+const SubTitle = styled.h4`
+  margin-bottom: 1%;
+`;
+
+const ListTitle = styled.p`
+  margin-top: 2%;
 `;
 
 export const Section = (props: {
@@ -14,28 +27,31 @@ export const Section = (props: {
   link: string;
 }): JSX.Element => {
   // function to split the description up into a list after each sentence
-  const layerDescription = (desc: string): string[] => {
-    if (desc.includes(".")) return desc.split(".");
-    else return [desc];
-  };
 
-  let newDescription = layerDescription(props.description);
-
-  console.log(newDescription);
+  /**
+   * const layerDescription = (desc: string): string[] => {
+   * if (desc.includes(".")) return desc.split(".");
+   * else return [desc];
+   * };
+   *
+   * let newDescription = layerDescription(props.description);
+   *
+   * console.log(newDescription);
+   */
 
   return (
-    <div>
+    <Seperator>
+      <SubTitle>{props.title}</SubTitle>
       <div>
-        {newDescription.map((data) => (
-          <Paragraph key={newDescription.indexOf(data)}>{data}</Paragraph>
-        ))}
+        <Paragraph>{props.description}</Paragraph>
       </div>
 
+      <ListTitle>This project was developed with:</ListTitle>
       <CustomList skills={props.skills} />
 
       <div>
         <CustomBtn title={props.title} link={props.link} />
       </div>
-    </div>
+    </Seperator>
   );
 };

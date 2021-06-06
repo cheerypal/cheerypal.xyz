@@ -47,6 +47,14 @@ export const additional: Additional[] = [
     skills: ["Vue.js"],
     link: "https://viroll.herokuapp.com",
   },
+  {
+    id: 2,
+    title: "Personal Site",
+    description:
+      "Developed this very site to display my projects, experience and other things I find interesting.",
+    skills: ["TypeScript", "React", "Redux"],
+    link: "https://github.com/cheerypal/euangordon.me",
+  },
 ];
 
 export const mates: Mates[] = [

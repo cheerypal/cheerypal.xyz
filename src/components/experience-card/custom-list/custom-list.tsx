@@ -1,13 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
+const List = styled.div`
+  margin: 3% 0;
+`;
+
+const ListItem = styled.p`
+  margin: 0.5% 0;
+`;
+
 export const CustomList = (props: { skills: string[] }): JSX.Element => {
   const { skills } = props;
   return (
-    <div>
+    <List>
       {skills.map((data) => (
-        <p key={skills.indexOf(data)}>{data}</p>
+        <ListItem key={skills.indexOf(data)}>{data}</ListItem>
       ))}
-    </div>
+    </List>
   );
 };
