@@ -1,2 +1,0 @@
-# euangordon.me
-Personal Website
