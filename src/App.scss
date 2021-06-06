@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #100f13;
+  --accent-color: #cfa65f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "mont-reg";
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "mont-black";
+  src: url("./assets/fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family: "mont-light";
+  src: url("./assets/fonts/Montserrat-Light.ttf");
+}
+
+body {
+  margin: 10%;
+  font-family: "mont-reg";
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+h1 {
+  font-family: "mont-black";
+  font-size: 5em;
+  color: var(--accent-color);
+}
+
+h3 {
+  font-family: "mont-black";
+  font-size: 2.5em;
+  color: var(--accent-color);
+}
+
+h4 {
+  font-family: "mont-black";
+  font-size: 2em;
+  color: var(--accent-color);
+}
+
+h5 {
+  font-family: "mont-black";
+  font-size: 1em;
+  color: var(--primary-color);
+  padding: 0;
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+a {
+  color: var(--primary-color);
+  font-size: 2em;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8864c;
+}
+
+::selection {
+  background: var(--accent-color);
+}
+
+::-moz-selection {
+  background: var(--accent-color);
+}
