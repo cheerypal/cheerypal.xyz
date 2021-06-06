@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Section } from "./experience-section";
 import { CustomList } from "./custom-list";
 import { Links } from "./links";
 
 import { useAppSelector } from "../../hooks";
+import { ProjectSection } from "../project-section";
 
 export const Title = styled.h1`
   user-select: none;
@@ -44,30 +44,11 @@ export const Experience = (): JSX.Element => {
         </Paragraph>
         <CustomList skills={Work.languages} />
       </Seperator>
-      <Seperator>
-        <SubTitle>University</SubTitle>
-        {ProjectsUni.map(({ id, title, description, link, skills }) => (
-          <Section
-            key={id}
-            title={title}
-            description={description}
-            link={link}
-            skills={skills}
-          />
-        ))}
-      </Seperator>
-      <Seperator>
-        <SubTitle>Additional Projects</SubTitle>
-        {ProjectsAd.map(({ id, title, description, link, skills }) => (
-          <Section
-            key={id}
-            title={title}
-            description={description}
-            link={link}
-            skills={skills}
-          />
-        ))}
-      </Seperator>
+      <ProjectSection projectname="University" projectarray={ProjectsUni} />
+      <ProjectSection
+        projectname="Additional Projects"
+        projectarray={ProjectsAd}
+      />
       <Seperator>
         <SubTitle>Some of the Boys</SubTitle>
         <Links />
