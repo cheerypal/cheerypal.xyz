@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { Section } from "./experience-section";
 import { CustomList } from "./custom-list";
+import { Links } from "./links";
 
 import { useAppSelector } from "../../hooks";
 
@@ -66,6 +67,10 @@ export const Experience = (): JSX.Element => {
             skills={skills}
           />
         ))}
+      </Seperator>
+      <Seperator>
+        <SubTitle>Some of the Boys</SubTitle>
+        <Links />
       </Seperator>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const List = styled.div`
-  margin: 3% 0;
+  margin: 2% 0 5% 0;
 `;
 
 const ListItem = styled.p`

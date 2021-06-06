@@ -50,9 +50,20 @@ h4 {
   color: var(--accent-color);
 }
 
+h5 {
+  font-family: "mont-black";
+  font-size: 1em;
+  color: var(--primary-color);
+  padding: 0;
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
 a {
   color: var(--primary-color);
   font-size: 2em;
+  text-decoration: none;
 
   &:hover {
     color: var(--accent-color);
