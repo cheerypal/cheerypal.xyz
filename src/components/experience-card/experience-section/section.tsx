@@ -6,6 +6,18 @@ import { CustomList } from "../custom-list";
 const Paragraph = styled.p`
   margin: 1% 50% 1% 0;
   line-height: 1.5;
+
+  @media (max-width: 1200px) {
+    margin: 1% 30% 1% 0;
+  }
+
+  @media (max-width: 800px) {
+    margin: 1% 20% 1% 0;
+  }
+
+  @media (max-width: 500px) {
+    margin: 5% 0;
+  }
 `;
 
 const Seperator = styled.div`

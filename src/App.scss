@@ -30,6 +30,10 @@ body {
   font-family: "mont-reg";
   background-color: var(--secondary-color);
   color: var(--primary-color);
+
+  @media screen and (max-width: 500px) {
+    margin: 5% 10%;
+  }
 }
 
 h1 {

@@ -11,6 +11,18 @@ export const Title = styled.h1`
   user-select: none;
   padding: 0;
   font-size: 6em;
+
+  @media (max-width: 1240px) {
+    font-size: 4em;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 3em;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 3.5em;
+  }
 `;
 
 export const Seperator = styled.div`
