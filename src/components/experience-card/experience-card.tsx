@@ -10,7 +10,6 @@ import { ProjectSection } from "../project-section";
 export const Title = styled.h1`
   user-select: none;
   padding: 0;
-  font-size: 6em;
 
   @media (max-width: 1240px) {
     font-size: 4em;
@@ -21,12 +20,15 @@ export const Title = styled.h1`
   }
 
   @media (max-width: 500px) {
-    font-size: 3.5em;
+    font-size: 2em;
   }
 `;
 
 export const Seperator = styled.div`
   margin: 2% 0 7% 0;
+  @media (max-width: 500px) {
+    margin: 5% 0 30% 0;
+  }
 `;
 
 export const SubTitle = styled.h3`
@@ -35,6 +37,9 @@ export const SubTitle = styled.h3`
 
 const Paragraph = styled.p`
   margin: 1% 0;
+  @media (max-width: 500px) {
+    font-size: 0.9em;
+  }
 `;
 
 export const Experience = (): JSX.Element => {

@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: none;
 }
 
 @font-face {
@@ -31,8 +32,9 @@ body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 
+  overflow: auto;
   @media screen and (max-width: 500px) {
-    margin: 5% 10%;
+    margin: 0 5%;
   }
 }
 
@@ -46,12 +48,36 @@ h3 {
   font-family: "mont-black";
   font-size: 2.5em;
   color: var(--accent-color);
+
+  @media (max-width: 1240px) {
+    font-size: 2em;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.6em;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 1.5em;
+  }
 }
 
 h4 {
   font-family: "mont-black";
   font-size: 2em;
   color: var(--accent-color);
+
+  @media (max-width: 1240px) {
+    font-size: 2em;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.6em;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 1.2em;
+  }
 }
 
 h5 {
@@ -61,6 +87,10 @@ h5 {
   padding: 0;
   &:hover {
     color: var(--accent-color);
+  }
+
+  @media (max-width: 500px) {
+    font-size: 0.7em;
   }
 }
 
@@ -98,4 +128,10 @@ a {
 
 ::-moz-selection {
   background: var(--accent-color);
+}
+
+p {
+  @media (max-width: 500px) {
+    font-size: 0.9em;
+  }
 }

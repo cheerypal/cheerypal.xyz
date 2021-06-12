@@ -3,6 +3,14 @@ import styled from "styled-components";
 
 const List = styled.div`
   margin: 2% 0 5% 0;
+
+  @media (max-width: 1030px) {
+    margin: 5% 0 8% 0;
+  }
+
+  @media (max-width: 500px) {
+    margin: 10% 0 10% 0;
+  }
 `;
 
 const ListItem = styled.p`

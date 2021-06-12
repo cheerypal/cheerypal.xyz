@@ -5,9 +5,10 @@ import { useAppSelector } from "../../../hooks";
 import { LinkItem } from "./link-item";
 
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 50%;
 `;
 
 export const Links = (): JSX.Element => {

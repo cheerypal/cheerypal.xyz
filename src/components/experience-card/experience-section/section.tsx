@@ -22,6 +22,9 @@ const Paragraph = styled.p`
 
 const Seperator = styled.div`
   margin: 0 0 10% 0;
+  @media (max-width: 500px) {
+    margin: 5% 0 30% 0;
+  }
 `;
 
 const SubTitle = styled.h4`
