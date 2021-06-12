@@ -8,7 +8,10 @@ const Grid = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
+  @media (max-width: 500px) {
+    width: 50%;
+  }
 `;
 
 export const Links = (): JSX.Element => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { TitleCardContainer, Title, SubTitle } from "./title-card-styles";
 import { SocialGroup } from "../social-group";
-import { CustomBtn } from "../custom-btn";
+import { CustomBtn } from "../custom-btn-router";
 
 export const TitleCard = (): JSX.Element => {
   return (
@@ -15,7 +15,7 @@ export const TitleCard = (): JSX.Element => {
         development, TypeScript and Node.js.
       </SubTitle>
       <SocialGroup />
-      <CustomBtn title="Request CV" link="mailto:euangordon32@gmail.com" />
+      <CustomBtn title="About Me" link="/about" />
     </TitleCardContainer>
   );
 };
