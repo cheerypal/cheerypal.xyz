@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import { CustomList } from "./custom-list";
-import { Links } from "./links";
 
 import { useAppSelector } from "../../hooks";
 import { ProjectSection } from "../project-section";
@@ -66,10 +65,6 @@ export const Experience = (): JSX.Element => {
         projectname="Additional Projects"
         projectarray={ProjectsAd}
       />
-      <Seperator>
-        <SubTitle>Some of the Boys</SubTitle>
-        <Links />
-      </Seperator>
     </div>
   );
 };
