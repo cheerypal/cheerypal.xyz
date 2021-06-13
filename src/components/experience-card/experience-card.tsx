@@ -57,8 +57,8 @@ export const Experience = (): JSX.Element => {
       <Seperator>
         <SubTitle>Work Experience</SubTitle>
         <Paragraph>
-          Currently working in app development. Not much more I can say really
-          ;)
+          Currently working in backend app development. Not much more I can say
+          really ;)
         </Paragraph>
         <Paragraph>
           By working with Arch I have gained a massive amount of experience in

@@ -10,6 +10,7 @@ import projectReducer from "./projects";
 import matesReducer from "./mates";
 import socialReducer from "./social";
 import kanyeReducer from "./kanye-quotes";
+import covidReducer from "./covid-data";
 
 const persistConfig = {
   key: "root",
@@ -23,6 +24,7 @@ const rootReducer = combineReducers({
   mates: matesReducer,
   social: socialReducer,
   kanye: kanyeReducer,
+  covid: covidReducer,
 });
 
 export default persistReducer(persistConfig, rootReducer);

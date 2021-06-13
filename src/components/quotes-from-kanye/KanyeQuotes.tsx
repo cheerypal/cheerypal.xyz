@@ -23,13 +23,11 @@ const Regularise = styled.span`
 export const Kanye = (): JSX.Element => {
   const kanyeData = useAppSelector((state) => state.kanye.data);
 
-  console.log(kanyeData);
-
   return (
     <Seperator>
       <h3>If Kanye Was Here:</h3>
       <Quote>
-        {kanyeData.quote} <Regularise>- Kanye</Regularise>
+        {kanyeData.quote}. <Regularise>- Kanye</Regularise>
       </Quote>
     </Seperator>
   );
