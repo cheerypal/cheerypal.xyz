@@ -27,7 +27,7 @@ export const Kanye = (): JSX.Element => {
     <Seperator>
       <h3>If Kanye Were Here:</h3>
       <Quote>
-        {kanyeData.quote}. <Regularise>- Kanye</Regularise>
+        {kanyeData.quote}. <Regularise>- Kanye West</Regularise>
       </Quote>
     </Seperator>
   );

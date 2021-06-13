@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useAppSelector } from "../../hooks";
-
+import { Link } from "react-router-dom";
 import { Data } from "./item";
 
 const RowData = styled.div`
@@ -36,13 +36,22 @@ export const Covid = (): JSX.Element => {
   return (
     <Seperator>
       <h3>Scottish Covid Data</h3>
-
       <RowData>
         <Data type="Date" data={covidData.date} />
         <Data type="Cases*" data={covidData.newCases} />
         <Data type="Deaths*" data={covidData.newDeaths} />
       </RowData>
-      <VIROLL href="https://viroll.herokuapp.com/">More data on VIROLL</VIROLL>
+      <RowData>
+        <Link
+          style={{ fontSize: "1.2em", marginBottom: "2%" }}
+          to="/covid-scotland"
+        >
+          More Scottish Data
+        </Link>
+        <VIROLL href="https://viroll.herokuapp.com/">
+          World data on VIROLL
+        </VIROLL>
+      </RowData>
       <Check>*New Cases/Deaths</Check>
     </Seperator>
   );
