@@ -10,9 +10,14 @@ export const TitleCard = (): JSX.Element => {
       <SubTitle>
         Hi, I'm Euan, a Graduate Software Engineer working at Arch.
       </SubTitle>
+
       <SubTitle>
         At Arch, I'm a backend engineer who's specialised in Serverless AWS
         development, TypeScript and Node.js.
+      </SubTitle>
+      <SubTitle>
+        I have a 1st Class BSc(hons) Degree in Computer Science from Heriot-Watt
+        University
       </SubTitle>
       <SocialGroup />
       <CustomBtn title="About Me" link="/about" />

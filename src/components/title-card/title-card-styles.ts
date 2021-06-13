@@ -39,7 +39,7 @@ export const SubTitle = styled.p`
 `;
 
 export const TitleCardContainer = styled.div`
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

@@ -12,7 +12,7 @@ const RowData = styled.div`
   margin: 1% 0 2% 0;
   @media (max-width: 500px) {
     width: 100%;
-    margin: 1% 0 4% 0;
+    margin: 4% 0;
   }
 `;
 

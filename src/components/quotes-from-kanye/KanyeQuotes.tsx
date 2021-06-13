@@ -25,7 +25,7 @@ export const Kanye = (): JSX.Element => {
 
   return (
     <Seperator>
-      <h3>If Kanye Was Here:</h3>
+      <h3>If Kanye Were Here:</h3>
       <Quote>
         {kanyeData.quote}. <Regularise>- Kanye</Regularise>
       </Quote>
