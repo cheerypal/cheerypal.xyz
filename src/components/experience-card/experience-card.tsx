@@ -41,12 +41,18 @@ const Paragraph = styled.p`
   }
 `;
 
+const Container = styled.div`
+  @media (max-width: 500px) {
+    margin: 20% 0;
+  }
+`;
+
 export const Experience = (): JSX.Element => {
   const Work = useAppSelector((state) => state.work.data);
   const ProjectsUni = useAppSelector((state) => state.projects.uni);
   const ProjectsAd = useAppSelector((state) => state.projects.additional);
   return (
-    <div>
+    <Container>
       <Title>Experience</Title>
       <Seperator>
         <SubTitle>Work Experience</SubTitle>
@@ -65,6 +71,6 @@ export const Experience = (): JSX.Element => {
         projectname="Additional Projects"
         projectarray={ProjectsAd}
       />
-    </div>
+    </Container>
   );
 };

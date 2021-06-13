@@ -40,6 +40,9 @@ export const SubTitle = styled.p`
 
 export const TitleCardContainer = styled.div`
   height: 80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 
   @media (max-width: 400px) {
     height: 100vh;
