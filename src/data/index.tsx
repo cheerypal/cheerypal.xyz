@@ -61,7 +61,7 @@ export const mates: Mates[] = [
   {
     id: 1,
     name: "Amaan",
-    link: "https://twitter.com/amaan_akram/",
+    link: "https://www.amaanakram.tech/",
   },
   {
     id: 2,
@@ -80,8 +80,8 @@ export const mates: Mates[] = [
   },
   {
     id: 5,
-    name: "Humiad",
-    link: "https://humaidq.ae/",
+    name: "Humaid",
+    link: "https://huma.id/",
   },
 ];
 
