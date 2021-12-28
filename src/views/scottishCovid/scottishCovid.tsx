@@ -39,16 +39,16 @@ const RowData = styled.div`
   }
 `;
 
-const SubTitle = styled.h3`
-  margin-bottom: 1%;
-`;
+// const SubTitle = styled.h3`
+//   margin-bottom: 1%;
+// `;
 
-const Paragraph = styled.p`
-  margin: 1% 0;
-  @media (max-width: 500px) {
-    font-size: 0.9em;
-  }
-`;
+// const Paragraph = styled.p`
+//   margin: 1% 0;
+//   @media (max-width: 500px) {
+//     font-size: 0.9em;
+//   }
+// `;
 
 const Container = styled.div`
   @media (max-width: 500px) {

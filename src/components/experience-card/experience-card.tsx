@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import { CustomList } from "./custom-list";
-
+// import { CustomList } from "./custom-list";
 import { useAppSelector } from "../../hooks";
 import { ProjectSection } from "../project-section";
+import { Section } from "./experience-section";
+import { snafler } from "../../data";
 
 export const Title = styled.h1`
   user-select: none;
@@ -35,9 +36,19 @@ export const SubTitle = styled.h3`
 `;
 
 const Paragraph = styled.p`
-  margin: 1% 0;
+  margin: 1% 50% 1% 0;
+  line-height: 1.5;
+
+  @media (max-width: 1200px) {
+    margin: 1% 30% 1% 0;
+  }
+
+  @media (max-width: 800px) {
+    margin: 1% 20% 1% 0;
+  }
+
   @media (max-width: 500px) {
-    font-size: 0.9em;
+    margin: 5% 0;
   }
 `;
 
@@ -56,15 +67,14 @@ export const Experience = (): JSX.Element => {
       <Title>Experience</Title>
       <Seperator>
         <SubTitle>Work Experience</SubTitle>
-        <Paragraph>
-          Currently working in backend app development. Not much more I can say
-          really ;)
-        </Paragraph>
-        <Paragraph>
-          By working with Arch I have gained a massive amount of experience in
-          modern web technologies:
-        </Paragraph>
-        <CustomList skills={Work.languages} />
+        <Paragraph>{Work.para1}</Paragraph>
+        <Paragraph>{Work.para2}</Paragraph>
+        <Section
+          title={snafler.title}
+          description={snafler.description}
+          link={snafler.link}
+          skills={snafler.skills}
+        />
       </Seperator>
       <ProjectSection projectname="University" projectarray={ProjectsUni} />
       <ProjectSection

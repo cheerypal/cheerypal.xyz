@@ -1,14 +1,21 @@
-import { Work, Mates, Social, Uni, Additional } from "./types";
+import { Work, Mates, Social, Uni, Additional, Snafler } from "./types";
 import { FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiOctopusdeploy } from "react-icons/si";
 
 export const work: Work = {
-  languages: [
-    "React",
-    "React-Native",
-    "AWS",
-    "Redux/Redux-Persist",
-    "TypeScript",
-  ],
+  para1:
+    "Currently working in the Innovation Team at Arch-Consulting. My role in this team takes on a multitude of jobs, from building, maintaining and improving the backend of one of our new apps to building and maintaining our internal webapp to moderate and control what is presented to our users via our new app. Since joining Arch in May of 2021 I have been a part of a 4 man development team that has successfully developed the app I have just mentioned - Snafler. Our team, albeit small, consists of: myself, 2 other graduates and a manager. We have successfully developed a fully functioning mobile application that released to the public on the 1st of December on both Apple and Android within 6 months of development!",
+  para2:
+    "It's been the company's most ambitious project yet whilst also being the company's first ever Business to Consumer App.",
+  languages: ["React", "React-Native", "AWS", "TypeScript"],
+};
+
+export const snafler: Snafler = {
+  title: "Snafler",
+  description:
+    "Snafler, think of it like a bucket list but with a game and level system stuck on top of it. You can create and make sets for other users to complete, follow content creators or just complete the sets we make, its purely up to our users how they want to use our app. The whole idea is to allow people to 'flex' or 'show-off' their passions by 'Snafling' experiences and posting them to our app. A set, as described, is a group of items that you can complete - 'Snafle' - to gain levels and get rewards via our app. A set could be to 'Snafle' all the top rated Christmas Films on IMDB. \n\nSince we finished development on the gamification and all core concepts we aimed to have in our app at launch we are looking to the future of Snafler. We want more incentives for our users to keep using Snafler, we are looking towards NFTs as rewards and many other cool ideas to reward our users.",
+  link: "https://www.snafler.com",
+  skills: work.languages,
 };
 
 export const uni: Uni[] = [
@@ -103,5 +110,11 @@ export const social: Social[] = [
     name: "linkedin",
     link: "https://www.linkedin.com/in/euan-gordon-8b984b151/",
     element: <FaLinkedinIn />,
+  },
+  {
+    id: 4,
+    name: "Snafler",
+    link: "https://share.snafler.com/referralcode/euangordo",
+    element: <SiOctopusdeploy />,
   },
 ];

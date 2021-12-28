@@ -15,6 +15,8 @@ export interface Additional {
 }
 
 export interface Work {
+  para1: string;
+  para2: string;
   languages: string[];
 }
 
@@ -29,4 +31,11 @@ export interface Social {
   name: string;
   link: string;
   element: JSX.Element;
+}
+
+export interface Snafler {
+  title: string;
+  description: string;
+  skills: string[];
+  link: string;
 }

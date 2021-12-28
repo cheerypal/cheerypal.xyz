@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useAppSelector } from "../../hooks";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Data } from "./item";
 
 const RowData = styled.div`
@@ -42,12 +42,6 @@ export const Covid = (): JSX.Element => {
         <Data type="Deaths*" data={covidData.newDeaths} />
       </RowData>
       <RowData>
-        <Link
-          style={{ fontSize: "1.2em", marginBottom: "2%" }}
-          to="/covid-scotland"
-        >
-          More Scottish Data
-        </Link>
         <VIROLL href="https://viroll.herokuapp.com/">
           World data on VIROLL
         </VIROLL>
