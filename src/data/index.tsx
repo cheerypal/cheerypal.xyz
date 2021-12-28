@@ -114,7 +114,7 @@ export const social: Social[] = [
   {
     id: 4,
     name: "Snafler",
-    link: "https://share.snafler.com/referralcode/euangordo",
+    link: "https://share.snafler.com/referralcode/cheerypal",
     element: <SiOctopusdeploy />,
   },
 ];
